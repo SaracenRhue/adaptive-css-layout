@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+	<style type="text/css">
+		.header {
+			grid-area: header;
+		}
+
+		.left {
+			grid-area: left;
+		}
+
+		.main {
+			grid-area: main;
+		}
+
+		.right {
+			grid-area: right;
+		}
+
+		.footer {
+			grid-area: footer;
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-areas:
+				'header header header header header header'
+				'left main main main main right'
+				'footer footer footer footer footer footer';
+			grid-gap: 1px;
+			background-color: red;
+			padding: 5px;
+		}
+
+		.grid-container>div {
+			background-color: orange;
+			text-align: center;
+			padding: 20px;
+			font-size: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+	</head>
+
+	<body>
+
+		<div class="grid-container">
+			<div class="header">Header</div>
+			<div class="left">Left</div>
+			<div class="main">Main</div>
+			<div class="right">Right</div>
+			<div class="footer">Footer</div>
+		</div>
+
+	</body>
+
+	</html>
+</body>
+<html>
